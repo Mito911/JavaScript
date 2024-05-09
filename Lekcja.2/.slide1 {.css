@@ -1,0 +1,61 @@
+.slide1 {
+    background-image: url('https://picsum.photos/800/600');
+  }
+  
+  .slide2 {
+    background-image: url('https://picsum.photos/800/600?1');
+  }
+  
+  .slide3 {
+    background-image: url('https://picsum.photos/800/600?2');
+  }
+  
+  .slide4 {
+    background-image: url('https://picsum.photos/800/600?3');
+  }
+  
+  .slides-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  
+  .controls button, .dots button {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .dots {
+    text-align: center;
+  }@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .slide-anim-in {
+    animation: slideIn 0.5s forwards;
+  }
+  
+  .slide-anim-out {
+    animation: slideOut 0.5s forwards;
+  }
