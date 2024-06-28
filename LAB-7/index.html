@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maciej Tuznik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <label for="numBalls">Liczba kulek (X): </label>
+        <input type="number" id="numBalls" value="50">
+        <label for="distance">Maksymalna odległość (Y): </label>
+        <input type="number" id="distance" value="100">
+        <label for="force">Siła odpychania/przyciągania: </label>
+        <input type="number" id="force" value="5">
+        <button onclick="startSimulation()">Start</button>
+        <button onclick="resetSimulation()">Reset</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
